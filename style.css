@@ -1,0 +1,278 @@
+/*
+Name: rajat 
+
+Assignment: Programming Pathshala Website
+Description: Responsive landing page using HTML and basic CSS
+*/
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f5f7fc;
+}
+
+/* ===== NAVBAR ===== */
+.header{
+  background:#1f2557;
+  padding:16px 40px;
+  color:white;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+}
+
+.logo-box{
+  width:30px;
+  height:30px;
+  background:white;
+  border-radius:6px;
+  margin-right:10px;
+}
+
+.logo-text{
+  font-weight:bold;
+  font-size:18px;
+}
+
+.nav-links a{
+  color:white;
+  margin-left:22px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.button{
+  background:#4f6df5;
+  color:white;
+  padding:10px 16px;
+  border-radius:6px;
+  text-decoration:none;
+  font-size:14px;
+  display:inline-block;
+}
+
+/* ===== HERO ===== */
+.hero{
+  background:#1f2557;
+  padding:60px 40px;
+  color:white;
+}
+
+.hero-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.hero-left{
+  width:52%;
+  min-width:280px;
+}
+
+.hero-left h1{
+  font-size:42px;
+  line-height:1.2;
+  margin:0 0 16px;
+}
+
+.hero-sub{
+  opacity:.9;
+  margin-bottom:22px;
+  font-size:15px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:12px;
+}
+
+.secondary-btn{
+  border:1px solid white;
+  padding:10px 16px;
+  border-radius:6px;
+  font-size:14px;
+}
+
+.hero-right{
+  width:40%;
+  min-width:300px;
+}
+
+/* ===== FORM ===== */
+.form{
+  background:white;
+  color:black;
+  padding:22px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.form h3{
+  margin-top:0;
+  margin-bottom:14px;
+}
+
+.form input{
+  width:100%;
+  padding:10px;
+  margin:6px 0;
+  border:1px solid #ddd;
+  border-radius:6px;
+}
+
+.form-btn{
+  margin-top:10px;
+  text-align:center;
+}
+
+.form-note{
+  font-size:12px;
+  color:#666;
+  margin-top:10px;
+}
+
+/* ===== FEATURES ===== */
+.section{
+  padding:70px 40px;
+  text-align:center;
+}
+
+.section h2{
+  margin-bottom:40px;
+}
+
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:24px;
+}
+
+.card{
+  width:280px;
+  background:white;
+  border-radius:14px;
+  padding:22px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.06);
+}
+
+.card img{
+  width:70px;
+  margin-bottom:10px;
+}
+
+.card h4{
+  margin:10px 0 6px;
+}
+
+.card p{
+  font-size:13px;
+  color:#555;
+}
+
+/* ===== COMPARISON ===== */
+.compare{
+  background:#1f2557;
+  color:white;
+  padding:70px 40px;
+  text-align:center;
+}
+
+table{
+  width:100%;
+  max-width:800px;
+  margin:30px auto 0;
+  border-collapse:collapse;
+}
+
+td,th{
+  border:1px solid rgba(255,255,255,0.25);
+  padding:12px;
+}
+
+th{
+  background:#27307a;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+  background:#0f1335;
+  color:white;
+  padding:60px 40px;
+}
+
+.footer-columns{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.footer-col{
+  width:220px;
+}
+
+.footer-col b{
+  display:block;
+  margin-bottom:12px;
+}
+
+.footer a{
+  color:#c7cbff;
+  text-decoration:none;
+  display:block;
+  margin:6px 0;
+  font-size:14px;
+}
+
+.footer-text{
+  font-size:13px;
+  color:#c7cbff;
+  margin-top:10px;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:900px){
+
+  .header{
+    padding:16px 20px;
+  }
+
+  .hero{
+    padding:40px 20px;
+  }
+
+  .section{
+    padding:50px 20px;
+  }
+
+  .compare{
+    padding:50px 20px;
+  }
+
+  .footer{
+    padding:40px 20px;
+  }
+
+  .hero-left,
+  .hero-right{
+    width:100%;
+  }
+
+  .hero-left h1{
+    font-size:30px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
